@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="zero">
+  <title>Mariposas Monarcas 🦋</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="app">
+    <div id="hero">
+      <h1><span>🦋</span><br />Mariposas monarcas para ti</h1>
+      <h6>Arrastrar, zoom y deslizar soportado</h6>
+    </div>
+  </div>
+  <!-- partial -->
+
+  <!-- 🎶 Audio de fondo -->
+  <audio id="bgMusic" src="music.mp3" autoplay loop></audio>
+
+  <!-- Script principal -->
+  <script type="module" src="./script.js"></script>
+
+  <!-- Si quieres controlar manualmente -->
+  <script>
+    const music = document.getElementById("bgMusic");
+    // Descomenta la siguiente línea si quieres que empiece solo cuando el usuario haga clic:
+    // document.body.addEventListener('click', () => music.play(), { once: true });
+  </script>
+</body>
+</html>
